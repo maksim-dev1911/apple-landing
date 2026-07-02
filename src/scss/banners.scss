@@ -1,47 +1,54 @@
+@use "mixins/bannerMixins" as bannerMixs;
+@use "mixins/mixins" as mixs;
+
 .banners {
-}
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 
-.banner {
-  margin-top: 13px;
-  overflow: hidden;
-}
+  .banner__iphone {
+    @include bannerMixs.bannerIphone;
+  }
 
-.banner__crop {
-  min-height: 420px;
-  overflow: hidden;
-  position: relative;
-}
+  .banner__iphoneAir {
+    @include bannerMixs.bannerIphoneAir;
+  }
 
-.banner__crop img {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
+  .banner__macbook {
+    @include bannerMixs.bannerMacbook;
+  }
 }
 
 .banner__content {
+  padding-top: 90px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    font-size: 54px;
+    line-height: 1.07143;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -.005em;
+  }
+
+  p {
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 400;
+    letter-spacing: .007em;
+    margin-top: 6px;
+  }
+}
+
+
+.banner__content_iphoneAir {
   padding-top: 55px;
   text-align: center;
   background-color: #f5f5f7;
+  color: #000000;
   width: 100%;
-}
-
-.banner__content h2 {
-  font-size: 54px;
-  line-height: 1.07143;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: -.005em;
-}
-
-.banner__content p {
-  font-size: 28px;
-  line-height: 1.14286;
-  font-weight: 400;
-  letter-spacing: .007em;
-  margin-top: 6px;
 }
 
 .banner__content_text {
@@ -52,14 +59,54 @@
 }
 
 .banner__content button {
-  all: unset;
-  background: #0071e3;
-  color: #fff;
-  border-color: rgba(0, 0, 0, 0);
-  border-radius: 980px;
-  cursor: pointer;
-  margin-top: 20px;
-  padding: 13px 22px;
-  font-size: 17px;
+  @include mixs.buttonPrimary
+}
+
+.banner__content_iphoneAir button {
+  @include mixs.buttonPrimary
+}
+
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__video_container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner__video_text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.banner__video_text h2 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -.005em;
+  margin: 0;
+}
+
+.banner__video_text p {
+  font-size: 28px;
+  line-height: 1.14286;
   font-weight: 400;
+  letter-spacing: .007em;
+  margin-top: 6px;
+}
+
+.banner__video_text button {
+  @include mixs.buttonSecondary
 }

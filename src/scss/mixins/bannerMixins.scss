@@ -1,0 +1,141 @@
+@use "./mixins" as mixs;
+
+@mixin bannerImages {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+@mixin bannerMacbook {
+  color: #ffffff;
+  background-image: url("../../../src/images/bannerImages/bgMacBook/bg-macbook-lg.jpg");
+  @include bannerImages;
+  height: 692px;
+
+  .banner__content {
+    padding-top: 50px;
+  }
+
+  @media (max-width: 1068px) {
+    background-image: url("../../../src/images/bannerImages/bgMacBook/bg-macbook-md.jpg");
+    height: 650px;
+
+    .banner__content {
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 735px) {
+    background-image: url("../../../src/images/bannerImages/bgMacBook/bg-macbook-xs.jpg");
+    height: 500px;
+
+    .banner__content {
+      padding-top: 37px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+
+      button {
+        @include mixs.buttonPrimaryXs;
+      }
+    }
+  }
+}
+
+@mixin bannerIphoneAir {
+  background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-lg.jpg");
+  @include bannerImages;
+  height: 692px;
+
+  @media (max-width: 1068px) {
+    background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-md.jpg");
+    height: 650px;
+
+    .banner__content {
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 735px) {
+    background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-xs.jpg");
+    height: 500px;
+
+    .banner__content {
+      padding-top: 37px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+
+      button {
+        @include mixs.buttonPrimaryXs;
+      }
+    }
+  }
+}
+
+@mixin bannerIphone {
+  color: #ffffff;
+  background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-lg.jpg");
+  @include bannerImages;
+  height: 692px;
+
+  @media (max-width: 1068px) {
+    background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-md.jpg");
+    height: 650px;
+
+    .banner__content {
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 735px) {
+    background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-xs.jpg");
+    height: 500px;
+
+    .banner__content {
+      padding-top: 65px;
+
+      h2 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+
+      button {
+        @include mixs.buttonPrimaryXs;
+      }
+    }
+  }
+}

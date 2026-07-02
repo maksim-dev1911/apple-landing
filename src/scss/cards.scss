@@ -1,0 +1,117 @@
+@use "mixins/cardsMixins" as cardMixins;
+@use "mixins/mixins" as mixs;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 13px;
+
+  .card__ipadContainer {
+    @include cardMixins.cardIpadPro;
+  }
+
+  .card__watchContainer {
+    @include cardMixins.cardWatch;
+  }
+
+  .card__airPodsContainer {
+    @include cardMixins.cardAirPods;
+  }
+
+  .card__ipadAirContainer {
+    @include cardMixins.cardIpadAir;
+  }
+
+  .card__macBookContainer {
+    @include cardMixins.cardMacBookAir;
+  }
+
+  .card__watchSeContainer {
+    @include cardMixins.cardWatchSE;
+  }
+}
+
+.card__content {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h3 {
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 400;
+    margin-top: 4px;
+  }
+
+  span {
+    color: #0071e3;
+    background: linear-gradient(135deg, #0077ed 50%, #d0eaff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  button {
+    @include mixs.buttonPrimaryXs
+  }
+}
+
+@media (max-width: 1068px) {
+  .card__content {
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+
+    span {
+      font-size: 28px;
+    }
+  }
+
+  .card__content.bottom {
+    top: 200px;
+  }
+}
+
+@media (max-width: 735px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 13px 0;
+  }
+}
+
+.card__content.top {
+  top: 120px;
+}
+
+.card__content.bottom {
+  bottom: 0;
+}

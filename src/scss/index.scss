@@ -1,0 +1,37 @@
+@use "./variables.scss" as vars;
+@use "mixins/mixins" as mixs;
+@use "./header.scss";
+@use "banners";
+@use "cards";
+@use "footer";
+@use "slider";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display', sans-serif;;
+}
+
+main {
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
