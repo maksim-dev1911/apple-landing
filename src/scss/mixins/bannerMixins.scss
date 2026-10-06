@@ -10,7 +10,7 @@
 
 @mixin bannerMacbook {
   color: #ffffff;
-  background-image: url("../../../src/images/bannerImages/bgMacBook/bg-macbook-lg.jpg");
+  background-image: url("/src/images/bannerImages/bgMacBook/bg-macbook-lg.jpg");
   @include bannerImages;
   height: 692px;
 
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/bannerImages/bgMacBook/bg-macbook-md.jpg");
+    background-image: url("/src/images/bannerImages/bgMacBook/bg-macbook-md.jpg");
     height: 650px;
 
     .banner__content {
@@ -56,12 +56,12 @@
 }
 
 @mixin bannerIphoneAir {
-  background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-lg.jpg");
+  background-image: url("/src/images/bannerImages/bgIphoneAir/bg-iphoneAir-lg.jpg");
   @include bannerImages;
   height: 692px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-md.jpg");
+    background-image: url("/src/images/bannerImages/bgIphoneAir/bg-iphoneAir-md.jpg");
     height: 650px;
 
     .banner__content {
@@ -76,7 +76,7 @@
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/bannerImages/bgIphoneAir/bg-iphoneAir-xs.jpg");
+    background-image: url("/src/images/bannerImages/bgIphoneAir/bg-iphoneAir-xs.jpg");
     height: 500px;
 
     .banner__content {
@@ -99,12 +99,12 @@
 
 @mixin bannerIphone {
   color: #ffffff;
-  background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-lg.jpg");
+  background-image: url("/src/images/bannerImages/bgIphone/bg-iphone-lg.jpg");
   @include bannerImages;
   height: 692px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-md.jpg");
+    background-image: url("/src/images/bannerImages/bgIphone/bg-iphone-md.jpg");
     height: 650px;
 
     .banner__content {
@@ -119,7 +119,7 @@
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/bannerImages/bgIphone/bg-iphone-xs.jpg");
+    background-image: url("/src/images/bannerImages/bgIphone/bg-iphone-xs.jpg");
     height: 500px;
 
     .banner__content {

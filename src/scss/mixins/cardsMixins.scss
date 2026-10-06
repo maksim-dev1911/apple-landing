@@ -8,97 +8,97 @@
 
 @mixin cardIpadPro {
   color: #ffffff;
-  background-image: url("../../../src/images/cardImages/ipadProImages/ipadPro-lg.jpg");
+  background-image: url("/src/images/cardImages/ipadProImages/ipadPro-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/ipadProImages/ipadPro-md.jpg");
+    background-image: url("/src/images/cardImages/ipadProImages/ipadPro-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/ipadProImages/ipadPro-xs.jpg");
+    background-image: url("/src/images/cardImages/ipadProImages/ipadPro-xs.jpg");
     height: 500px;
   }
 }
 
 @mixin cardWatch {
-  background-image: url("../../../src/images/cardImages/watchImages/watch-lg.jpg");
+  background-image: url("/src/images/cardImages/watchImages/watch-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/watchImages/watch-md.jpg");
+    background-image: url("/src/images/cardImages/watchImages/watch-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/watchImages/watch-xs.jpg");
+    background-image: url("/src/images/cardImages/watchImages/watch-xs.jpg");
     height: 500px;
   }
 }
 
 @mixin cardAirPods {
-  background-image: url("../../../src/images/cardImages/airPodsImages/airPods-lg.jpg");
+  background-image: url("/src/images/cardImages/airPodsImages/airPods-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/airPodsImages/airPods-md.jpg");
+    background-image: url("/src/images/cardImages/airPodsImages/airPods-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/airPodsImages/airPods-xs.jpg");
+    background-image: url("/src/images/cardImages/airPodsImages/airPods-xs.jpg");
     height: 500px;
   }
 }
 
 @mixin cardIpadAir {
-  background-image: url("../../../src/images/cardImages/ipadAirImages/ipadAir-lg.jpg");
+  background-image: url("/src/images/cardImages/ipadAirImages/ipadAir-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/ipadAirImages/ipadAir-md.jpg");
+    background-image: url("/src/images/cardImages/ipadAirImages/ipadAir-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/ipadAirImages/ipadAir-xs.jpg");
+    background-image: url("/src/images/cardImages/ipadAirImages/ipadAir-xs.jpg");
     height: 500px;
   }
 }
 
 @mixin cardMacBookAir {
-  background-image: url("../../../src/images/cardImages/macbookAirImages/macbookAir-lg.jpg");
+  background-image: url("/src/images/cardImages/macbookAirImages/macbookAir-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/macbookAirImages/macbookAir-md.jpg");
+    background-image: url("/src/images/cardImages/macbookAirImages/macbookAir-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/macbookAirImages/macbookAir-xs.jpg");
+    background-image: url("/src/images/cardImages/macbookAirImages/macbookAir-xs.jpg");
     height: 500px;
   }
 }
 
 @mixin cardWatchSE {
-  background-image: url("../../../src/images/cardImages/watchSEImages/watchSE-lg.jpg");
+  background-image: url("/src/images/cardImages/watchSEImages/watchSE-lg.jpg");
   @include cardImages;
   height: 580px;
 
   @media (max-width: 1068px) {
-    background-image: url("../../../src/images/cardImages/watchSEImages/watchSE-md.jpg");
+    background-image: url("/src/images/cardImages/watchSEImages/watchSE-md.jpg");
     height: 490px;
   }
 
   @media (max-width: 735px) {
-    background-image: url("../../../src/images/cardImages/watchSEImages/watchSE-xs.jpg");
+    background-image: url("/src/images/cardImages/watchSEImages/watchSE-xs.jpg");
     height: 500px;
   }
 }
